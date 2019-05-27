@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>RegisterUser</servlet-name>
+        <servlet-class>com.mojuk.User.Service.RegisterUser</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>LoginUser</servlet-name>
+        <servlet-class>com.mojuk.User.Service.LoginUser</servlet-class>
+
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateUser</servlet-name>
+        <servlet-class>com.mojuk.User.Service.UpdateUser</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>WriteBoard</servlet-name>
+        <servlet-class>com.mojuk.Board.Service.WriteBoard</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateBoard</servlet-name>
+        <servlet-class>com.mojuk.Board.Service.UpdateBoard</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteBoard</servlet-name>
+        <servlet-class>com.mojuk.Board.Service.DeleteBoard</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterUser</servlet-name>
+        <url-pattern>/RegisterUser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>LoginUser</servlet-name>
+        <url-pattern>/LoginUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>WriteBoard</servlet-name>
+        <url-pattern>/WriteBoard</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateBoard</servlet-name>
+        <url-pattern>/UpdateBoard</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateUser</servlet-name>
+        <url-pattern>/UpdateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteBoard</servlet-name>
+        <url-pattern>/DeleteBoard</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
